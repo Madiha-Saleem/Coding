@@ -1,6 +1,6 @@
 class Solution {
     public char findTheDifference(String s, String t) {
-        int i,j,l1,l2,s1=0,s2=0,ans;
+        /*int i,j,l1,l2,s1=0,s2=0,ans;
         l1=s.length();
         l2=t.length();
         char c1[]=new char[l1];
@@ -14,6 +14,15 @@ class Solution {
             s2=s2+(int)c2[i];
         }
         ans=s2-s1;
-        return (char)ans;
+        return (char)ans;*/
+        char ans=0;
+        for(int i=0;i<s.length();i++){
+            ans^=s.charAt(i);
+        }
+        for(int i=0;i<t.length();i++){
+            ans^=t.charAt(i);
+        }
+
+        return ans;
     }
 }
