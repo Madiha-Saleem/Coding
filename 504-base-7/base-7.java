@@ -1,6 +1,10 @@
 class Solution {
     public String convertToBase7(int num) {
-        int r;
+        return Integer.toString(num,7);
+    }
+}
+
+/*int r;
         String s="";
         if(num==0) return "0"; 
         boolean isNeg=num<0;
@@ -11,6 +15,4 @@ class Solution {
             s=r+s;
         }
          if(isNeg) s="-"+s;
-        return s;
-    }
-}
+        return s;*/
