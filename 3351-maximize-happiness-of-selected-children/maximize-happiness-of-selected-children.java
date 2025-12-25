@@ -8,7 +8,7 @@ class Solution {
             value=happiness[l-1-i]-i;
             if(value<=0)
             break;
-            sum += value;
+            sum+=value;
         }
         return sum;
     }
