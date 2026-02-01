@@ -1,14 +1,14 @@
 class Solution {
-    static {
-        Runtime.getRuntime().gc();
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            try (FileWriter f = new FileWriter("display_runtime.txt")) {
-                f.write("0");
-            } catch (Exception e) {
+    // static {
+    //     Runtime.getRuntime().gc();
+    //     Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+    //         try (FileWriter f = new FileWriter("display_runtime.txt")) {
+    //             f.write("0");
+    //         } catch (Exception e) {
 
-            }
-        }));
-    }
+    //         }
+    //     }));
+    // }
     public List<Integer> findDuplicates(int[] nums) {
         int i;
         List<Integer> s=new ArrayList<>();
