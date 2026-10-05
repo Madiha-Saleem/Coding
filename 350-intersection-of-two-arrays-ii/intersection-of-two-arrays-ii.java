@@ -12,10 +12,11 @@ class Solution {
                 }
             }
         }
-        int ans[]=new int[k];
+        /*int ans[]=new int[k];
         for(i=0;i<k;i++){
             ans[i]=arr[i];
         }
-        return ans;
+        return ans;*/
+        return java.util.Arrays.copyOf(arr, k);
     }
 }
